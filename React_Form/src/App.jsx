@@ -1,15 +1,13 @@
-import React from 'react'
-import './App.css'
-import Forms from "./Components/Forms"
+import React from "react";
+import "./App.css";
+import Forms from "./Components/Forms";
 
 function App() {
-  
-
   return (
     <>
-     <Forms/>
+      <Forms />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

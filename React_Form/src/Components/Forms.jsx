@@ -6,21 +6,21 @@ function Forms() {
     firstName: "",
     lastName: "",
     Email: "",
-    Contact: ""
+    Contact: "",
   });
 
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     Email: "",
-    Contact: ""
+    Contact: "",
   });
 
   const [focus, setFocus] = useState({
     firstName: false,
     lastName: false,
     Email: false,
-    Contact: false
+    Contact: false,
   });
 
   const [registrationSuccess, setRegistrationSuccess] = useState(false);
@@ -81,7 +81,9 @@ function Forms() {
             onFocus={() => handleFocus("firstName")}
             placeholder="Enter your First Name"
           />
-          <div className="error-message">{focus.firstName && alert.firstName}</div>
+          <div className="error-message">
+            {focus.firstName && alert.firstName}
+          </div>
         </label>
 
         <label htmlFor="lastName">
@@ -94,7 +96,9 @@ function Forms() {
             onFocus={() => handleFocus("lastName")}
             placeholder="Enter your Last Name"
           />
-          <div className="error-message">{focus.lastName && alert.lastName}</div>
+          <div className="error-message">
+            {focus.lastName && alert.lastName}
+          </div>
         </label>
 
         <label htmlFor="Email">
